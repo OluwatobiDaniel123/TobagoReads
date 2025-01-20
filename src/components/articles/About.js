@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { FaBreadSlice } from "react-icons/fa";
+import { IoSchoolSharp } from "react-icons/io5";
+import { RiFirstAidKitFill } from "react-icons/ri";
 
 const About = () => {
   const [progress, setProgress] = useState(0);
@@ -50,7 +53,9 @@ const About = () => {
       </Container>
       <Services>
         <ServiceCard>
-          <Icon>💻</Icon>
+          <Icon>
+            <FaBreadSlice />
+          </Icon>
           <CardTitle>Food & Basic Necessities</CardTitle>
           <CardDescription>
             Providing monetary support to individuals, families, or communities
@@ -58,7 +63,9 @@ const About = () => {
           </CardDescription>
         </ServiceCard>
         <ServiceCard>
-          <Icon>🌐</Icon>
+          <Icon>
+            <IoSchoolSharp />
+          </Icon>
           <CardTitle>Education & Skill Development</CardTitle>
           <CardDescription>
             Funding or organizing schools for children in underserved
@@ -66,7 +73,9 @@ const About = () => {
           </CardDescription>
         </ServiceCard>
         <ServiceCard>
-          <Icon>☁️</Icon>
+          <Icon>
+            <RiFirstAidKitFill />
+          </Icon>
           <CardTitle>Healthcare Services</CardTitle>
           <CardDescription>
             Free medical checkups, vaccination drives, and counseling services
@@ -74,7 +83,7 @@ const About = () => {
           </CardDescription>
         </ServiceCard>
         <div>
-          <CardTitle>Meet Our Team</CardTitle>
+          <CardTitle>Meet Our Volunteer's</CardTitle>
           <TeamSection>
             <TeamMember>
               <img
@@ -82,23 +91,23 @@ const About = () => {
                 alt="Team Member"
               />
               <h4>Oluwatobi Daniel</h4>
-              <p>CEO & Founder</p>
+              <p>Volunteer</p>
             </TeamMember>
             <TeamMember>
               <img
-                src="https://res.cloudinary.com/dbcygr0pi/image/upload/v1736662182/about1_du5jbv.jpg"
+                src="https://res.cloudinary.com/dbcygr0pi/image/upload/v1736774363/WhatsApp_Image_2025-01-10_at_17.55-Photoroom_tafyqg.jpg"
                 alt="Team Member"
               />
               <h4>John Smith</h4>
-              <p>Lead Developer</p>
+              <p>Volunteer</p>
             </TeamMember>
             <TeamMember>
               <img
-                src="https://res.cloudinary.com/dbcygr0pi/image/upload/v1736662182/about1_du5jbv.jpg"
+                src="https://res.cloudinary.com/dbcygr0pi/image/upload/v1736774363/WhatsApp_Image_2025-01-10_at_17.55-Photoroom_tafyqg.jpg"
                 alt="Team Member"
               />
               <h4>Emily Brown</h4>
-              <p>UI/UX Designer</p>
+              <p>Volunteer</p>
             </TeamMember>
           </TeamSection>
         </div>
