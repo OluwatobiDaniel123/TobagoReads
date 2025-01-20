@@ -24,9 +24,9 @@ const Box = styled.div`
 `;
 
 const LogoImage = styled.img`
-  height: 45px;
+  height: 40px;
   background: #f9f9f9;
-  border-radius: 50%;
+  border-radius: 25%;
   box-shadow: 0 0 0 0.5px lightblue;
 `;
 

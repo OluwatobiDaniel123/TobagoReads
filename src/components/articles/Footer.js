@@ -66,9 +66,9 @@ const SocialIcons = styled.div`
   }
 `;
 const LogoImage = styled.img`
-  height: 45px;
+  height: 40px;
   background: #f9f9f9;
-  border-radius: 50%;
+  border-radius: 25%;
 `;
 
 const Footer = () => {
@@ -83,11 +83,6 @@ const Footer = () => {
               alt="LogoImg"
             />
           </FooterHeader>
-          <FooterText>Lagos</FooterText>
-          <FooterText>Odonla. Odogunyan, Ikorodu, Lagos</FooterText>
-          <FooterText>+234 (0)810 9830 746</FooterText>
-        </FooterSection>
-        <FooterSection>
           <FooterHeader>United States</FooterHeader>
           <FooterText>
             2300 Camp Oando nowway, Cof 143 #1008 dollins Park, GA 34537, United
