@@ -227,121 +227,106 @@ const Header = () => {
         </Link>
 
         <HeaderUl>
-          {["/", "/Services", "/Projects", "/About", "/Contact"].map(
-            (path, index) => (
-              <NavItem key={index} isActive={activeNav === path}>
-                <Link to={path}>{path === "/" ? "Home" : path.slice(1)}</Link>
+          {["/", "/Projects", "/About", "/Contact"].map((path, index) => (
+            <NavItem key={index} isActive={activeNav === path}>
+              <Link to={path}>{path === "/" ? "Home" : path.slice(1)}</Link>
 
-                {/* Dropdown content for each link */}
-                {path === "/Services" && (
-                  <DropdownContent>
-                    <DropdownItem to="/services#web-development">
-                      Web Development
-                    </DropdownItem>
-                    <DropdownItem to="/services#mobile-app">
-                      Mobile App Development
-                    </DropdownItem>
-                    <DropdownItem to="/services#seo">SEO Services</DropdownItem>
-                  </DropdownContent>
-                )}
+              {path === "/Projects" && (
+                <DropdownContent>
+                  <DropdownItem to="/portfolio#projects">
+                    Our Projects Our Projects Our Projects
+                  </DropdownItem>
+                  <DropdownItem to="/portfolio#case-studies">
+                    Case Studies
+                  </DropdownItem>
+                </DropdownContent>
+              )}
 
-                {path === "/Projects" && (
-                  <DropdownContent>
-                    <DropdownItem to="/portfolio#projects">
-                      Our Projects Our Projects Our Projects
-                    </DropdownItem>
-                    <DropdownItem to="/portfolio#case-studies">
-                      Case Studies
-                    </DropdownItem>
-                  </DropdownContent>
-                )}
+              {path === "/About" && (
+                <DropdownContent>
+                  <h4>About Us</h4>
+                  <DropdownDiv>
+                    <div>
+                      <LogoImage
+                        src="https://res.cloudinary.com/dbcygr0pi/image/upload/v1737249931/img6_cfbqfk.jpg"
+                        loading="lazy"
+                        alt="Logo"
+                      />
+                      <span>Lagos state ikeja</span>
+                    </div>
 
-                {path === "/About" && (
-                  <DropdownContent>
-                    <h4>About Us</h4>
-                    <DropdownDiv>
-                      <div>
-                        <LogoImage
-                          src="https://res.cloudinary.com/dbcygr0pi/image/upload/v1737249931/img6_cfbqfk.jpg"
-                          loading="lazy"
-                          alt="Logo"
-                        />
-                        <span>Lagos state ikeja</span>
-                      </div>
+                    <span>
+                      hello Phone: 123-456-7890 Phone: 123-456-7890 Phone:
+                      123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
+                      Phone: 123-456-7890 Phone: 123-456-7890 Phone:
+                      123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
+                      Phone: 123-456-7890 Phone: 123-456-7890 Phone:
+                      123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
+                    </span>
+                  </DropdownDiv>
+                  <DropdownItem to="/about#team">Meet the Team</DropdownItem>
+                  <DropdownItem to="/about#our-story">Our Story</DropdownItem>
+                  <DropdownItem to="/about#values">Our Values</DropdownItem>
+                </DropdownContent>
+              )}
 
-                      <span>
-                        hello Phone: 123-456-7890 Phone: 123-456-7890 Phone:
-                        123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
-                        Phone: 123-456-7890 Phone: 123-456-7890 Phone:
-                        123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
-                        Phone: 123-456-7890 Phone: 123-456-7890 Phone:
-                        123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
-                      </span>
-                    </DropdownDiv>
-                    <DropdownItem to="/about#team">Meet the Team</DropdownItem>
-                    <DropdownItem to="/about#our-story">Our Story</DropdownItem>
-                    <DropdownItem to="/about#values">Our Values</DropdownItem>
-                  </DropdownContent>
-                )}
+              {path === "/Contact" && (
+                <DropdownContent>
+                  <h4>Contact Us</h4>
+                  <DropdownDiv>
+                    <span>
+                      hello Phone: 123-456-7890 Phone: 123-456-7890 Phone:
+                      123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
+                      Phone: 123-456-7890 Phone: 123-456-7890 Phone:
+                      123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
+                      Phone: 123-456-7890 Phone: 123-456-7890 Phone:
+                      123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
+                    </span>
+                  </DropdownDiv>
+                  <SocialIcons>
+                    <FooterLink
+                      style={{ width: "auto" }}
+                      href="https://www.facebook.com"
+                      aria-label="Facebook"
+                    >
+                      <FaFacebook />
+                    </FooterLink>
+                    <FooterLink
+                      style={{ width: "auto" }}
+                      href="https://www.twitter.com"
+                      aria-label="Twitter"
+                    >
+                      <FaTwitter />
+                    </FooterLink>
+                    <FooterLink
+                      style={{ width: "auto" }}
+                      href="https://www.linkedin.com"
+                      aria-label="LinkedIn"
+                    >
+                      <FaLinkedin />
+                    </FooterLink>
+                    <FooterLink
+                      style={{ width: "auto" }}
+                      href="https://www.instagram.com"
+                      aria-label="Instagram"
+                    >
+                      <FaInstagram />
+                    </FooterLink>
+                  </SocialIcons>
 
-                {path === "/Contact" && (
-                  <DropdownContent>
-                    <h4>Contact Us</h4>
-                    <DropdownDiv>
-                      <span>
-                        hello Phone: 123-456-7890 Phone: 123-456-7890 Phone:
-                        123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
-                        Phone: 123-456-7890 Phone: 123-456-7890 Phone:
-                        123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
-                        Phone: 123-456-7890 Phone: 123-456-7890 Phone:
-                        123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
-                      </span>
-                    </DropdownDiv>
-                    <SocialIcons>
-                      <FooterLink
-                        style={{ width: "auto" }}
-                        href="https://www.facebook.com"
-                        aria-label="Facebook"
-                      >
-                        <FaFacebook />
-                      </FooterLink>
-                      <FooterLink
-                        style={{ width: "auto" }}
-                        href="https://www.twitter.com"
-                        aria-label="Twitter"
-                      >
-                        <FaTwitter />
-                      </FooterLink>
-                      <FooterLink
-                        style={{ width: "auto" }}
-                        href="https://www.linkedin.com"
-                        aria-label="LinkedIn"
-                      >
-                        <FaLinkedin />
-                      </FooterLink>
-                      <FooterLink
-                        style={{ width: "auto" }}
-                        href="https://www.instagram.com"
-                        aria-label="Instagram"
-                      >
-                        <FaInstagram />
-                      </FooterLink>
-                    </SocialIcons>
-
-                    <DropdownItem to="/contact#phone">
-                      Phone: 123-456-7890
-                    </DropdownItem>
-                    <DropdownItem to="/contact#email">
-                      Email: contact@domain.com
-                    </DropdownItem>
-                    <DropdownItem to="/contact#social-media">
-                      Social Media
-                    </DropdownItem>
-                  </DropdownContent>
-                )}
-              </NavItem>
-            )
-          )}
+                  <DropdownItem to="/contact#phone">
+                    Phone: 123-456-7890
+                  </DropdownItem>
+                  <DropdownItem to="/contact#email">
+                    Email: contact@domain.com
+                  </DropdownItem>
+                  <DropdownItem to="/contact#social-media">
+                    Social Media
+                  </DropdownItem>
+                </DropdownContent>
+              )}
+            </NavItem>
+          ))}
           <Link to="/donate">
             <QuoteButton>Donate Now</QuoteButton>
           </Link>
@@ -360,18 +345,16 @@ const Header = () => {
             alt="Logo"
           />
         </Link>
-        {["/", "/Services", "/Projects", "/About", "/Contact"].map(
-          (path, index) => (
-            <SideNavItem
-              key={index}
-              to={path}
-              isActive={activeNav === path}
-              onClick={() => setShowNav(false)}
-            >
-              {path === "/" ? "Home" : path.slice(1)}
-            </SideNavItem>
-          )
-        )}
+        {["/", "/Projects", "/About", "/Contact"].map((path, index) => (
+          <SideNavItem
+            key={index}
+            to={path}
+            isActive={activeNav === path}
+            onClick={() => setShowNav(false)}
+          >
+            {path === "/" ? "Home" : path.slice(1)}
+          </SideNavItem>
+        ))}
         <Link to="/donate">
           <QuoteButton>Donate Now</QuoteButton>
         </Link>
