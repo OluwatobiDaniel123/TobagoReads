@@ -2,5 +2,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.danovalab.com/sitemap.xml
+Sitemap: https://www.tobagoreads.com/sitemap.xml
 
