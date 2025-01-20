@@ -52,36 +52,39 @@ const About = () => {
         </ImageWrapper>
       </Container>
       <Services>
-        <ServiceCard>
-          <Icon>
-            <FaBreadSlice />
-          </Icon>
-          <CardTitle>Food & Basic Necessities</CardTitle>
-          <CardDescription>
-            Providing monetary support to individuals, families, or communities
-            in need.
-          </CardDescription>
-        </ServiceCard>
-        <ServiceCard>
-          <Icon>
-            <IoSchoolSharp />
-          </Icon>
-          <CardTitle>Education & Skill Development</CardTitle>
-          <CardDescription>
-            Funding or organizing schools for children in underserved
-            communities.
-          </CardDescription>
-        </ServiceCard>
-        <ServiceCard>
-          <Icon>
-            <RiFirstAidKitFill />
-          </Icon>
-          <CardTitle>Healthcare Services</CardTitle>
-          <CardDescription>
-            Free medical checkups, vaccination drives, and counseling services
-            also Covering costs for surgeries, medications, or treatments.
-          </CardDescription>
-        </ServiceCard>
+        <ServiceList>
+          <ServiceCard>
+            <Icon>
+              <FaBreadSlice />
+            </Icon>
+            <CardTitle>Food & Basic Necessities</CardTitle>
+            <CardDescription>
+              Providing monetary support to individuals, families, or
+              communities in need.
+            </CardDescription>
+          </ServiceCard>
+          <ServiceCard>
+            <Icon>
+              <IoSchoolSharp />
+            </Icon>
+            <CardTitle>Education & Skill Development</CardTitle>
+            <CardDescription>
+              Funding or organizing schools for children in underserved
+              communities.
+            </CardDescription>
+          </ServiceCard>
+          <ServiceCard>
+            <Icon>
+              <RiFirstAidKitFill />
+            </Icon>
+            <CardTitle>Healthcare Services</CardTitle>
+            <CardDescription>
+              Free medical checkups, vaccination drives, and counseling services
+              also Covering costs for surgeries, medications, or treatments.
+            </CardDescription>
+          </ServiceCard>
+        </ServiceList>
+
         <div>
           <CardTitle>Meet Our Volunteer's</CardTitle>
           <TeamSection>
@@ -98,7 +101,7 @@ const About = () => {
                 src="https://res.cloudinary.com/dbcygr0pi/image/upload/v1736774363/WhatsApp_Image_2025-01-10_at_17.55-Photoroom_tafyqg.jpg"
                 alt="Team Member"
               />
-              <h4>John Smith</h4>
+              <h4>Oluwatobi Daniel</h4>
               <p>Volunteer</p>
             </TeamMember>
             <TeamMember>
@@ -106,7 +109,7 @@ const About = () => {
                 src="https://res.cloudinary.com/dbcygr0pi/image/upload/v1736774363/WhatsApp_Image_2025-01-10_at_17.55-Photoroom_tafyqg.jpg"
                 alt="Team Member"
               />
-              <h4>Emily Brown</h4>
+              <h4>Oluwatobi Daniel</h4>
               <p>Volunteer</p>
             </TeamMember>
           </TeamSection>
@@ -295,15 +298,18 @@ const HeroImage = styled.img`
 `;
 
 const Services = styled.div`
+  width: 100%;
+  margin-top: 60px;
+  padding: 10px 5px;
+`;
+
+const ServiceList = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  max-width: 1200px;
-  width: 100%;
   flex-wrap: wrap;
-  margin-top: 60px;
-  padding: 10px 5px;
+  margin-bottom: 40px;
 `;
 
 const ServiceCard = styled.div`
@@ -317,6 +323,9 @@ const ServiceCard = styled.div`
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 
+  @media (max-width: 768px) {
+    width: auto;
+  }
   &:hover {
     transform: translateY(-10px);
   }
