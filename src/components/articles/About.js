@@ -156,9 +156,7 @@ const TeamMember = styled.div`
 `;
 
 const HeroSection = styled.section`
-  // background: linear-gradient(120deg, #0d1117, #161b22);
-  // background: linear-gradient(175deg, #1e3c72, #2a5298);
-  background: rgba(0, 0, 0, 0.1);
+  background: linear-gradient(120deg, #0d1117, #161b22);
 
   color: #f5f7fa;
   padding: 80px 20px;
@@ -209,7 +207,6 @@ const Subtitle = styled.p`
   font-size: 1.25rem;
   line-height: 1.2;
   margin-bottom: 30px;
-  color: black;
 
   @media (max-width: 768px) {
     // font-size: 1rem;
