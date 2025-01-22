@@ -198,7 +198,7 @@ const Contact = () => {
       console.error(error.text);
       setAlertMessage({
         type: "error",
-        message: "Sorry, there was an issue sending your message.",
+        message: "Sorry, Network error.",
       });
     } finally {
       setLoading(false);

@@ -4,7 +4,6 @@ import PaystackPop from "@paystack/inline-js";
 
 const DonateContainer = styled.div`
   align-items: center;
-  //   height: 100vh;
   text-align: center;
   padding: 60px 30px;
   background: url("https://res.cloudinary.com/dbcygr0pi/image/upload/v1737382927/vecteezy_woman-holding-red-heart-love-health-insurance-donation_16652611_njmc2u.jpg")

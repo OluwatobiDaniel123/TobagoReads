@@ -4,6 +4,7 @@ import Banner from "../articles/Banner";
 import Contact from "../articles/Contact";
 import CountUp from "../articles/CountUp";
 import ProjectPage from "../articles/ProjectPage";
+import ContactPage from "../articles/ContactForm";
 
 const Home = () => {
   return (
@@ -12,7 +13,8 @@ const Home = () => {
       <About />
       <CountUp />
       <ProjectPage />
-      <Contact />
+      {/* <Contact /> */}
+      <ContactPage />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import styled, { keyframes } from "styled-components";
 
-// Slider settings
+
 const settings = {
   fade: true,
   infinite: true,
@@ -16,7 +16,7 @@ const settings = {
   pauseOnHover: false,
 };
 
-// Animations
+
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -34,7 +34,7 @@ const gradientShift = keyframes`
   100% { background-position: 0% 50%; }
 `;
 
-// Styled components
+
 const Image = styled.img`
   width: 100%;
   height: 100vh;
@@ -71,7 +71,6 @@ const TextContainer = styled.div`
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  // animation: ${fadeIn} 1.5s ease-out;
 
   @media (max-width: 768px) {
     width: 90%;
@@ -141,13 +140,12 @@ const CallToAction = styled(Link)`
   }
 `;
 
-// Text content for the slider
 const textContent = [
   {
     heading: "Join Hands to Make a Difference",
     subtext: "Every small contribution creates a big impact.",
     LinkText: "Donate Now",
-    link: "/donate",
+    link: "/Donate",
     image:
       "https://res.cloudinary.com/dbcygr0pi/image/upload/v1737372290/vecteezy_high-five-team-work-as-a-team-together-air-hands-bless-the_7102916_rq4bux.jpg",
   },
@@ -155,7 +153,7 @@ const textContent = [
     heading: "We’re Here to Help",
     subtext: "Reach out to learn how you can contribute or get support.",
     LinkText: "Contact Us",
-    link: "/contact",
+    link: "/Contact",
     image:
       "https://res.cloudinary.com/dbcygr0pi/image/upload/v1737372285/vecteezy_silhouette-of-hands-on-sunset-background-help-concept-hope_14000939_zwqjjc.jpg",
   },
@@ -169,7 +167,7 @@ const textContent = [
   },
 ];
 
-// Fade component
+
 const Fade = () => {
   return (
     <div style={{ height: "100vh" }} className="slider-container">

@@ -20,7 +20,6 @@ const fadeIn = keyframes`
 `;
 
 const HighlightsSection = styled.section`
-  // max-width: 1200px;
   padding: 80px 40px;
   text-align: center;
   background: linear-gradient(135deg, #1e3c72, #2a5298);
@@ -95,13 +94,13 @@ const HighlightCard = styled.div`
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    background: rgba(0, 0, 0, 0.5);
     transition: background 0.4s ease;
     z-index: 0;
   }
 
   &:hover::before {
-    background: rgba(0, 0, 0, 0.3); /* Lighter overlay on hover */
+    background: rgba(0, 0, 0, 0.3);
   }
 
   h3,
@@ -154,13 +153,13 @@ const HighlightCard1 = styled.div`
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    background: rgba(0, 0, 0, 0.5);
     transition: background 0.4s ease;
     z-index: 0;
   }
 
   &:hover::before {
-    background: rgba(0, 0, 0, 0.3); /* Lighter overlay on hover */
+    background: rgba(0, 0, 0, 0.3);
   }
 
   h3,
@@ -191,8 +190,6 @@ const HighlightCard1 = styled.div`
     }
   }
 `;
-
-// https://res.cloudinary.com/dbcygr0pi/image/upload/v1737383551/img7_n2xwpy.jpg
 
 const IconWrapper = styled.div`
   font-size: 5rem;

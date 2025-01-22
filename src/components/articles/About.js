@@ -125,8 +125,6 @@ const TeamSection = styled.div`
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  // border: 2px solid pink;
-
   margin-top: 40px;
 `;
 
@@ -134,7 +132,6 @@ const TeamMember = styled.div`
   text-align: center;
   max-width: 200px;
   padding: 20px;
-  // border: 2px solid pink;
 
   img {
     border-radius: 50%;
@@ -144,6 +141,7 @@ const TeamMember = styled.div`
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+
   img:hover {
     transform: scale(1.1);
     box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15);
@@ -169,7 +167,6 @@ const TeamMember = styled.div`
 
 const HeroSection = styled.section`
   background: linear-gradient(120deg, #0d1117, #161b22);
-
   color: #f5f7fa;
   padding: 80px 20px;
   display: flex;
@@ -205,11 +202,10 @@ const Title = styled.h1`
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  // background: linear-gradient(90deg, #00d4ff, #007bff);
   background: linear-gradient(175deg, #1e3c72, #2a5298);
-
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
   @media (max-width: 768px) {
     font-size: 2.5rem;
   }
@@ -221,7 +217,6 @@ const Subtitle = styled.p`
   margin-bottom: 30px;
 
   @media (max-width: 768px) {
-    // font-size: 1rem;
     line-height: 1.4;
     margin-bottom: 30px;
     text-align: left;
@@ -313,7 +308,6 @@ const ServiceList = styled.div`
 `;
 
 const ServiceCard = styled.div`
-  // background: #161b22;
   background: linear-gradient(175deg, #1e3c72, #2a5298);
   border: 1px solid #30363d;
   border-radius: 10px;
@@ -326,6 +320,7 @@ const ServiceCard = styled.div`
   @media (max-width: 768px) {
     width: auto;
   }
+
   &:hover {
     transform: translateY(-10px);
   }

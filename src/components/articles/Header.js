@@ -73,17 +73,17 @@ const NavItem = styled.li`
 `;
 
 const DropdownContent = styled.div`
-  display: none;
+  // display: none;
   position: absolute;
   top: 140%;
-  right: -120px;
+  right: -110px;
   padding: 10px 20px;
   background-color: #fff;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-  width: 535px;
+  width: 555px;
   z-index: 999;
   border-radius: 5px;
-  opacity: 0;
+  // opacity: 0;
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 `;
@@ -162,18 +162,16 @@ const QuoteButton = styled.button`
 
 const DropdownDiv = styled.div`
   display: flex;
-  // width: 320px;
-  padding: 20px;
+  padding: 20px 0;
   gap: 10px;
   margin-bottom: 20px;
   align-items: center;
   background: rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
 `;
 
 const FooterLink = styled.a`
   width: 200px;
-  // color: #fff;
   color: blue;
   text-decoration: none;
   margin: 5px 0;
@@ -189,19 +187,35 @@ const FooterLink = styled.a`
 const SocialIcons = styled.div`
   display: flex;
   margin-top: 10px;
+  align-items: center;
 
   a {
-    // color: #fff;
     color: blue;
     margin: 0 10px;
     font-size: 20px;
 
     &:hover {
-      color: lightblue;
+      // color: lightblue;
     }
   }
 `;
 
+const Detail = styled.div`
+  flex: 1;
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #58a6ff;
+  }
+  p {
+    margin: 8px 0;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  span {
+    line-height: 1.3rem;
+  }
+`;
 const Header = () => {
   const location = useLocation();
   const [activeNav, setActiveNav] = useState(location.pathname);
@@ -272,17 +286,27 @@ const Header = () => {
 
               {path === "/Contact" && (
                 <DropdownContent>
-                  <h4>Contact Us</h4>
-                  <DropdownDiv>
+                  <Detail>
+                    <h3>Contact Information</h3>
+                    <p>
+                      <strong>Phone:</strong> +1 (917) 836-7151
+                    </p>
+                    <p>
+                      <strong>Email:</strong> tobagoreads@yahoo.com
+                    </p>
+                    <p>
+                      <strong>Office Address:</strong> 2300 Camp Oando nowway,
+                      Cof 143 #1008 dollins Park, GA 34537, United States
+                    </p>
+
                     <span>
-                      hello Phone: 123-456-7890 Phone: 123-456-7890 Phone:
-                      123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
-                      Phone: 123-456-7890 Phone: 123-456-7890 Phone:
-                      123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
-                      Phone: 123-456-7890 Phone: 123-456-7890 Phone:
-                      123-456-7890 Phone: 123-456-7890 Phone: 123-456-7890
+                      Thank you for your generosity and commitment to our cause.
+                      Whether you have a question, want to collaborate, or
+                      simply wish to learn more, we’re here to assist you every
+                      step of the way.
                     </span>
-                  </DropdownDiv>
+                  </Detail>
+
                   <SocialIcons>
                     <FooterLink
                       style={{ width: "auto" }}
@@ -312,22 +336,15 @@ const Header = () => {
                     >
                       <FaInstagram />
                     </FooterLink>
+                    {/* <Link to="/Donate"> */}
+                    <QuoteButton>Donate Now</QuoteButton>
+                    {/* </Link> */}
                   </SocialIcons>
-
-                  <DropdownItem to="/contact#phone">
-                    Phone: 123-456-7890
-                  </DropdownItem>
-                  <DropdownItem to="/contact#email">
-                    Email: contact@domain.com
-                  </DropdownItem>
-                  <DropdownItem to="/contact#social-media">
-                    Social Media
-                  </DropdownItem>
                 </DropdownContent>
               )}
             </NavItem>
           ))}
-          <Link to="/donate">
+          <Link to="/Donate">
             <QuoteButton>Donate Now</QuoteButton>
           </Link>
         </HeaderUl>

@@ -1,10 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { FaDonate, FaHandHoldingHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const PageWrapper = styled.div`
-  // padding: 20px;
   font-family: Arial, sans-serif;
 `;
 
@@ -14,13 +12,15 @@ const HeroSection = styled.section`
   color: #fff;
   text-align: center;
   padding: 80px 20px;
-  // border-radius: 8px;
 `;
 
 const HeroText = styled.div`
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    background: linear-gradient(90deg, #00d4ff, #007bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   p {
@@ -160,7 +160,7 @@ const ProjectPage = () => {
           <div className="progress-bar">
             <div className="progress"></div>
           </div>
-          <Link to="/donate">
+          <Link to="/Donate">
             <button>Donate Now</button>
           </Link>
         </ProjectCard>
@@ -176,7 +176,7 @@ const ProjectPage = () => {
           <div className="progress-bar">
             <div className="progress"></div>
           </div>
-          <Link to="/donate">
+          <Link to="/Donate">
             <button>Donate Now</button>
           </Link>
         </ProjectCard>
@@ -192,7 +192,7 @@ const ProjectPage = () => {
           <div className="progress-bar">
             <div className="progress"></div>
           </div>
-          <Link to="/donate">
+          <Link to="/Donate">
             <button>Donate Now</button>
           </Link>
         </ProjectCard>
@@ -200,7 +200,7 @@ const ProjectPage = () => {
 
       <CTASection>
         <h2>Ready to Make a Difference?</h2>
-        <Link to="/donate">
+        <Link to="/Donate">
           <button>Donate Today</button>
         </Link>
       </CTASection>
